@@ -21,6 +21,13 @@
 				"aliases": ["GDScript"]
 			}
 		],
+		"grammars": [
+			{
+				"language": "gdscript",
+				"scopeName": "source.gdscript",
+				"path": "./syntaxes/GDScript.tmLanguage.json"
+			}
+		],
 		"configuration": {
 			"type": "object",
 			"title": "Godot",
