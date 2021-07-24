@@ -9,9 +9,41 @@
 	"categories": [
 		"Programming Languages"
 	],
-	"activationEvents": [],
+	"activationEvents": [
+		"workspaceContains:project.godot"
+	],
 	"main": "./out/extension.js",
-	"contributes": {},
+	"contributes": {
+		"languages": [
+			{
+				"id": "gdscript",
+				"extensions": [".gd"],
+				"aliases": ["GDScript"]
+			}
+		],
+		"grammars": [
+			{
+				"language": "gdscript",
+				"scopeName": "source.gdscript",
+				"path": "./syntaxes/GDScript.tmLanguage.json"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Godot",
+			"properties": {
+				"godot.languageServerPort": {
+					"scope": "resource",
+					"type": "number",
+					"default": 6008,
+					"description": "Port number for communicating with Godot's language server."
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"vscode-languageclient": "^7.0.0"
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
