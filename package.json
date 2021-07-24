@@ -20,7 +20,22 @@
 				"extensions": [".gd"],
 				"aliases": ["GDScript"]
 			}
-		]
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Godot",
+			"properties": {
+				"godot.languageServerPort": {
+					"scope": "resource",
+					"type": "number",
+					"default": 6008,
+					"description": "Port number for communicating with Godot's language server."
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"vscode-languageclient": "^7.0.0"
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
