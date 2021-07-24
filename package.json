@@ -18,7 +18,8 @@
 			{
 				"id": "gdscript",
 				"extensions": [".gd"],
-				"aliases": ["GDScript"]
+				"aliases": ["GDScript"],
+				"configuration": "./gdscript-configuration.json"
 			}
 		],
 		"grammars": [
