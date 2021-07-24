@@ -9,9 +9,19 @@
 	"categories": [
 		"Programming Languages"
 	],
-	"activationEvents": [],
+	"activationEvents": [
+		"workspaceContains:project.godot"
+	],
 	"main": "./out/extension.js",
-	"contributes": {},
+	"contributes": {
+		"languages": [
+			{
+				"id": "gdscript",
+				"extensions": [".gd"],
+				"aliases": ["GDScript"]
+			}
+		]
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
