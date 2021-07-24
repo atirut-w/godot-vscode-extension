@@ -7,20 +7,11 @@
 		"vscode": "^1.58.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
 	],
-	"activationEvents": [
-        "onCommand:godot.helloWorld"
-	],
+	"activationEvents": [],
 	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "godot.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
+	"contributes": {},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
